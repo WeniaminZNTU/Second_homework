@@ -1,0 +1,186 @@
+:root{
+
+}
+
+body{
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    background: #333;
+    color: #fff;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: center;
+}
+
+header{
+    min-height: 450px;
+}
+
+h1, h2, h3{
+    font-weight: 900;
+    margin: 0;
+    padding: 1em 0;
+}
+
+.bg-image{
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 450px;
+    width: 100vm;
+
+    background-image: url("https://res.cloudinary.com/time2hack/image/upload/q_auto:good,f_auto/execute-javascript-code-inside-es6-templates.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+}
+
+.content-wrap{
+    grid-column: 2/4;
+}
+
+.content-wrap > h1{
+    font-size: 1.9em;
+
+    padding-top: 100px;
+    padding-bottom: 0.57em;
+
+    grid-column: 2/4;
+    text-align: center;
+}
+
+
+.button{
+    padding: 1em 2em;
+    border: 1px solid #666;
+    margin: 0.5em 0;
+
+    color: aliceblue;
+    text-decoration: none;
+    background: #333;
+
+    display: inline-block;
+}
+
+.content-wrap > a:hover{
+    color: #333;
+    background: cornsilk;
+}
+
+#section1 .content-text{
+    columns: 2;
+    column-gap: 2em;
+}
+
+#section1{
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section1 h2{
+    font-size: 1.6em;
+
+    padding-bottom: 1em;
+
+    grid-column: 2/4;
+    text-align: center;
+}
+
+#section2{
+    /*min-height: ;*/
+    padding: 2em 1em 1em;
+}
+
+#section2 ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    grid-column: 2/4;
+
+    margin: 0;
+    padding: 0;
+}
+
+#section2 li{
+    color: #333;
+    width: 31%;
+    background: #fff;
+}
+
+img{
+    /*background-size: cover;*/
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 1.5em;
+}
+
+.card-content p{
+    margin: 0;
+    padding: 1em 0;
+    color: #333;
+    font-size: 1em;
+}
+
+#section3{
+    color: #333;
+    padding: 2em;
+    background-color: #fff;
+}
+
+#section3 h2{
+    font-size: 1.5em;
+
+    padding-top: 1em;
+    padding-bottom: 1.45em;
+
+    grid-column: 2/4;
+    text-align: center;
+}
+
+#section4 .box{
+    padding: 2em;
+    color: #fff;
+    grid-column: span 2;
+}
+
+#section4 .box:first-child{
+    background: #2690d4;
+}
+
+#section4 h2{
+    font-size: 1.6em;
+
+    padding-bottom: 1em;
+
+    grid-column: 2/4;
+    text-align: center;
+}
+
+footer{
+    color: #fff;
+    /*text-align: center;*/
+}
+
+footer > div{
+    padding: 2em;
+    grid-column: span 2;
+
+    background: black;
+}
+
